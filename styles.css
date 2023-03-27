@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Dark-cyan-two: hsl(186, 100%, 49%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: #969696;
+
+}
+
+body {
+    /* background: url(./images/bg-pattern-top.svg); */
+    background-color:var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.card{
+    width: 400px;
+    border-radius: 12px;
+    /* border: 1px solid; */
+}
+
+
+.blue-bg {
+    background: url(./images/bg-pattern-card.svg);
+    padding: 80px 40px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px ;
+    position: relative;
+}
+
+/* image profile styling */
+.image img{
+    border-radius: 50%;
+    position: absolute;
+    left: 37%;
+    bottom: -40px;
+}
+
+.white-bg {
+    background: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+/* profile styling */
+
+.profile {
+    text-align: center;
+    /* border: 1px solid; */
+    padding: 20px 10px 30px;
+}
+
+.profile .victor{
+    font-weight: 700;
+    margin-top: 45px;
+}
+.profile .victor span{
+    font-weight: normal;
+    color: var(--Dark-gray);
+    margin-left: 10px;
+}
+.profile .london {
+    color: var(--Dark-gray);
+    margin-top: 10px;
+}
+
+/* rating container */
+.rating-container {
+    border-top: 1px solid #969696;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.rating .number-bld{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.rating > .number-bld ~ p{
+    color: var(--Dark-gray);
+    text-align: center;
+}
+
+@media(max-width: 375px){
+    .card {
+        width: 100px;
+    }
+    .rating-container{
+        padding: 27px;
+    }
+    .image img{
+        border: 40%;
+    }
+
+}

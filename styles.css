@@ -16,7 +16,9 @@
 }
 
 body {
-    /* background: url(./images/bg-pattern-top.svg); */
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat, no-repeat;
     background-color:var(--Dark-cyan);
     display: flex;
     justify-content: center;

@@ -26,6 +26,7 @@ body {
     min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
 }
+/* card  */
 .card{
     width: 400px;
     border-radius: 12px;

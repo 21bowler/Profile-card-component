@@ -16,6 +16,7 @@
 }
 
 body {
+    /*  this are two svg background    */
     background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-position: right 52vw bottom 35vh, left 48vw top 52vh;
     background-repeat: no-repeat, no-repeat;
